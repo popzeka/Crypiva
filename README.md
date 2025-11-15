@@ -1,30 +1,52 @@
 # Crypiva: Simple Password Generator
 
-This repository contains a simple Python script to generate random passwords.  It's designed to be easy to use and understand.
+Crypiva is a simple Python script for generating strong, random passwords. It's designed to be straightforward and easy to use from the command line.
 
 ## Features
 
-* Generates strong passwords with customizable length.
-* Optionally includes digits and symbols.
-* Easy to use from the command line.
+*   Generates strong passwords with a customizable length.
+*   Optionally include or exclude digits and symbols.
+*   Simple command-line interface.
 
-## Usage
+## Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/Crypiva.git
-   ```
-2. Install the requirements:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the script:
-   ```bash
-   python script.py
-   ```
+### 1. Installation
 
-This will generate a password with a default length of 12 characters, including digits and symbols.  You can modify the script to change these settings.
+First, clone the repository to your local machine and navigate into the directory:
+```bash
+git clone https://github.com/YOUR_USERNAME/Crypiva.git
+cd Crypiva
+```
+
+Next, install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Usage
+
+Run the script from your terminal to generate a password.
+
+**Generate a default password (12 characters, with digits and symbols):**
+```bash
+python script.py
+```
+> Example output: `s&aP7!k#tE9b`
+
+By default, the script generates a password with a length of 12 characters, including letters, digits, and symbols. You can customize this behavior using command-line arguments.
+
+**Generate a password with a specific length:**
+```bash
+# Generates a 20-character password
+python script.py --length 20
+```
+
+**Generate a password without symbols:**
+```bash
+# Generates a 16-character password with only letters and numbers
+python script.py --length 16 --no-symbols
+```
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
+Contributions are always welcome! Please feel free to open an issue or submit a pull request.
